@@ -28,6 +28,7 @@ class Movie {
 $movie_1 = new Movie ( 'Your name' );
 $movie_2 = new Movie ( 'Avengers' );
 
+
 ?>
 
 <!DOCTYPE html>
