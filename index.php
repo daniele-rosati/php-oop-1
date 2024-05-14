@@ -9,24 +9,29 @@
 class Movie {
     // variabili d'istanza
     public $name;
-    public $time;
+    public $genre;
 
     // costruttore
 
-    function  __construct($name)
+    function  __construct($name, $genre )
     {
         $this->name = $name;
+        $this->genre = $genre;
     }
 
     function get_name()
     {
-        return $this->name;
+        return $this->name;    
+    }
+    function get_genre ()
+    {
+        return $this->genre;
     }
         
 }
 
-$movie_1 = new Movie ( 'Your name' );
-$movie_2 = new Movie ( 'Avengers' );
+$movie_1 = new Movie ( 'Your name', 'Romantico' );
+$movie_2 = new Movie ( 'Avengers', 'Azione' );
 
 
 ?>
@@ -43,7 +48,13 @@ $movie_2 = new Movie ( 'Avengers' );
         Film 1: <?php echo $movie_1-> get_name() ?>
     </h3>
     <h3>
+        Genere: <?php echo $movie_1-> get_genre() ?>
+    </h3>
+    <h3>
         Film 2: <?php echo $movie_2-> get_name() ?>
+    </h3>
+    <h3>
+    Genere: <?php echo $movie_2-> get_genre() ?>
     </h3>
 </body>
 </html>
